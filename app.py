@@ -2,7 +2,7 @@ import streamlit as st
 from hello import Bank
 
 st.set_page_config(page_title="Simple Bank App", layout="centered")
-st.title("🏦 Welcome to Streamlit Bank")
+st.title("🏦 Welcome to Heritage Bank")
 
 menu = st.sidebar.selectbox("Choose Action", ["Create Account", "Deposit", "Withdraw", "Show Details", "Update Info", "Delete Account"])
 
@@ -132,4 +132,5 @@ elif menu == "Delete Account":
         elif not confirm:
             st.warning("Please confirm you want to delete the account")
         else:
+
             st.warning("Please fill all fields")
