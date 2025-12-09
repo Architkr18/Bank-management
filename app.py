@@ -31,7 +31,7 @@ elif menu == "Deposit":
     st.subheader("Deposit Money")
     acc_no = st.text_input("Account Number")
     pin = st.text_input("PIN", type="password")
-    amount = st.number_input("Amount", min_value=1, value=0)
+    amount = st.number_input("Amount", min_value=0, value=0)
 
     if st.button("Deposit"):
         if acc_no and pin and amount > 0:
@@ -50,7 +50,7 @@ elif menu == "Withdraw":
     st.subheader("Withdraw Money")
     acc_no = st.text_input("Account Number")
     pin = st.text_input("PIN", type="password")
-    amount = st.number_input("Amount", min_value=1, value=0)
+    amount = st.number_input("Amount", min_value=0, value=0)
 
     if st.button("Withdraw"):
         if acc_no and pin and amount > 0:
@@ -134,3 +134,4 @@ elif menu == "Delete Account":
         else:
 
             st.warning("Please fill all fields")
+
